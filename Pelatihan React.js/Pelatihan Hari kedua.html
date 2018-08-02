@@ -1,0 +1,483 @@
+ <!doctype html> 
+
+<html lang="en"> 
+
+  <head> 
+
+    <!-- Required meta tags --> 
+
+    <meta charset="utf-8"> 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+
+  
+
+    <!-- Bootstrap CSS --> 
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous"> 
+
+  
+
+   
+
+  
+
+    <title>Hello, world!</title> 
+
+  
+
+    <style> 
+
+        @media (max-width: 1000px;) { 
+
+      body 
+
+      { 
+
+        background-color: red; 
+
+      } 
+
+        } 
+
+        /*@media query digunakan untuk Responsivitas Website ,seperti yang ada di keterangan, jikalau width dari device <= (kurang dari sama dengan) 1000px ,maka backgroudnya akan sberwarna merah*/ 
+
+  
+
+  
+
+    </style> 
+
+  
+
+    <style type="text/css"> 
+
+        .card 
+
+        { 
+
+            -webkit-box-shadow: 14px 11px 0px 0px rgba(0,0,0,0.75); 
+
+            -moz-box-shadow: 14px 11px 0px 0px rgba(0,0,0,0.75); 
+
+            box-shadow: 14px 11px 0px 0px rgba(0,0,0,0.75); 
+
+        } 
+
+    </style> 
+
+  </head> 
+
+  <body> 
+
+    <!-- Grid System https://getbootstrap.com/docs/4.0/layout/grid/ --> 
+
+    <!-- Sementara Bootstrap menggunakan em atau rem untuk menentukan sebagian besar ukuran, px  digunakan untuk pemecah grid dan lebar kontainer. Ini karena lebar viewport dalam piksel dan tidak berubah dengan ukuran font. --> 
+
+  
+
+    <!-- Grid juga dapat diatur dalam berbagai macam device dan akan berubah sesuai dengan kodingan kalian contoh <div class=".col-xs-12 .col-md-8" , yang artinya jika web lebarnya sebesar Handphone (xs) maka tampilan akan  menjadi 12 kolom .Jika web lebarnya sebesar dekstop biasa maka akan berubah menjadi 8 kolom --> 
+
+    <!-- Ada beberapa kelas atau tingkatan dalam kolom :  
+
+        1.xs (phones) 
+
+        2.sm (tablets),  
+
+        3.md (desktops), and  
+
+        4.lg (larger desktops) --> 
+
+         
+
+    <!-- Setiap tingkatan kelas meningkat, artinya jika Anda berencana untuk menetapkan lebar yang sama untuk xs dan sm, Anda hanya perlu menentukan xs. --> 
+
+  
+
+    <!-- Ukuran dari kolom : 
+
+    ada beberapa ukuran kolom pada setiap device : 
+
+    1.Extra Small <576px - class="col" max lebar container : none 
+
+    2.Small >=576px - class="col-sm" max lebar container 540px 
+
+    3.Medium >=768px - class="col-md" max lebar container 720px 
+
+    4.Large >=992px - class="col-lg" max lebar container 960px 
+
+    5.Extra Large >=1200px - class="col-xl max lebar container 1140px --> 
+
+         
+
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark"> 
+
+                <a class="navbar-brand" href="#">Navbar</a> 
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> 
+
+                  <span class="navbar-toggler-icon"></span> 
+
+                </button> 
+
+               
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent"> 
+
+                  <ul class="navbar-nav mr-auto"> 
+
+                    <li class="nav-item active"> 
+
+                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> 
+
+                    </li> 
+
+                    <li class="nav-item"> 
+
+                      <a class="nav-link" href="#">Link</a> 
+
+                    </li> 
+
+                    <li class="nav-item dropdown"> 
+
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+
+                        Dropdown 
+
+                      </a> 
+
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown"> 
+
+                        <!-- Untuk memberikan efek dropdown --> 
+
+                        <a class="dropdown-item" href="#">Action</a> 
+
+                        <a class="dropdown-item" href="#">Another action</a> 
+
+                        <div class="dropdown-divider"></div> 
+
+                        <a class="dropdown-item" href="#">Something else here</a> 
+
+                      </div> 
+
+                    </li> 
+
+                    <li class="nav-item"> 
+
+                      <a class="nav-link disabled" href="#">Disabled</a> 
+
+                      <!-- Untuk memberikan efe mati yang artinya Item tidak bisa digunakan --> 
+
+                    </li> 
+
+                  </ul> 
+
+                  <form class="form-inline my-2 my-lg-0"> 
+
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> 
+
+  
+
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> 
+
+                    <!-- Search Button --> 
+
+                  </form> 
+
+                </div> 
+
+              </nav> 
+
+     
+
+              <div class="jumbotron"> 
+
+                <!-- Apa itu Jumbotron? Jumbotron yaitu merupakan sebuah style yang telah tersedia di Bootstrap yang bisa kita gunakan untuk meletakkan content yang berukuran cukup besar misalnya seperti untuk membuat header web ataupun content-content gambar yang di rasa membutuhkan ukuran yang cukup besar bisa menggunakan bootstrap agar tampilannya lebih rap --> 
+
+                <!-- Kasarnya Jumbotron seperti meberikan efek ukuran besar agar dapat menarik perhatian pengunjung website --> 
+
+                <!-- Dokumentasi Jumbotron : https://getbootstrap.com/docs/4.0/components/jumbotron/ --> 
+
+  
+
+  
+
+                    <h1 class="display-4">Hello, world!</h1> 
+
+                    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p> 
+
+                    <hr class="my-4"> 
+
+                    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p> 
+
+                    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> 
+
+                </div> 
+
+  
+
+              <div id="carouselExampleControls" class="carousel slide" data-ride="carousel"> 
+
+                <!-- Carousel ,memberikan efek ototmatis ganti slide, cari saja di getbootstrap.com lalu search Carousel --> 
+
+                <!-- Carousel adalah tampilan slide untuk bersepeda melalui serangkaian konten, dibangun dengan transformasi CSS CSS dan sedikit JavaScript. Ia bekerja dengan serangkaian gambar, teks, atau markup khusus. Ini juga termasuk dukungan untuk kontrol dan indikator sebelumnya / berikutnya. 
+
+  
+
+Di browser di mana Halaman Visibilitas API didukung, carousel akan menghindari geser ketika halaman web tidak terlihat oleh pengguna (seperti ketika tab browser tidak aktif, jendela browser diminimalkan, dll). 
+
+  
+
+Harap perhatikan bahwa korsel bertingkat tidak didukung, dan korsel umumnya tidak sesuai dengan standar aksesibilitas. 
+
+  
+
+Terakhir, jika Anda membuat JavaScript kami dari sumber, itu memerlukan util.js. 
+
+Contoh 
+
+  
+
+Carousel tidak otomatis menormalkan dimensi slide. Dengan demikian, Anda mungkin perlu menggunakan utilitas tambahan atau gaya khusus untuk konten ukuran yang sesuai. Meskipun komidi putar mendukung kontrol dan indikator sebelumnya / berikutnya, mereka tidak secara eksplisit diperlukan. Tambahkan dan sesuaikan sesuai keinginan Anda. 
+
+  
+
+Kelas .aktif perlu ditambahkan ke salah satu slide jika tidak carousel tidak akan terlihat. Juga pastikan untuk menetapkan id unik pada .carousel untuk kontrol opsional, terutama jika Anda menggunakan beberapa komidi putar pada satu halaman. Elemen kontrol dan indikator harus memiliki atribut target-data (atau href untuk tautan) yang cocok dengan id elemen .carousel. --> 
+
+  
+
+<!--Dokumentasi pelatihan beserta Sintaksnya ada di : https://getbootstrap.com/docs/4.1/components/carousel/  --> 
+
+  
+
+  
+
+  <div class="carousel-inner"> 
+
+    <div class="carousel-item active"> 
+
+      <img class="d-block w-100" src="..." alt="First slide"> 
+
+    </div> 
+
+    <div class="carousel-item"> 
+
+      <img class="d-block w-100" src="..." alt="Second slide"> 
+
+    </div> 
+
+    <div class="carousel-item"> 
+
+      <img class="d-block w-100" src="..." alt="Third slide"> 
+
+    </div> 
+
+  </div> 
+
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev"> 
+
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span> 
+
+    <span class="sr-only">Previous</span> 
+
+  </a> 
+
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next"> 
+
+    <span class="carousel-control-next-icon" aria-hidden="true"></span> 
+
+    <span class="sr-only">Next</span> 
+
+  </a> 
+
+</div> 
+
+  
+
+                <div class="container"> 
+
+                  <!-- container adalah elemen tata letak paling dasar di Bootstrap dan diperlukan saat menggunakan sistem grid default kami. Pilih dari wadah yang responsif dan tetap-lebar (artinya lebar maksimumnya berubah di setiap titik pemisah) atau lebar-cairan (artinya lebarnya 100% sepanjang waktu).Meskipun kontainer dapat disarangkan, sebagian besar tata letak tidak memerlukan wadah bersarang.--> 
+
+  
+
+                  <!-- Untuk class container biasanya tata letaknya contentnya berada di tengah --> 
+
+  
+
+                  <!-- Sedangkan untuk class="container-fluid" berfungsi agar content bersifat full width atau lebarnya penuh atau 100% width sdalam artian 12 kolom dari pojok kiri hingga pojok kanan , Dokumentasi Pelatihan beserta sintaks : https://getbootstrap.com/docs/4.1/layout/overview/#containers --> 
+
+  
+
+                    <div class="row"> 
+
+                    <!-- Row untuk memberikan efek sebaris ,dimana nantinya Letak dari konten akan diletakkan sejajar 
+
+                     Sebaris 
+
+                     Dokumentasi https://getbootstrap.com/docs/4.1/content/tables/#striped-rows   
+
+                                  https://getbootstrap.com/docs/4.1/content/tables/#hoverable-rows  --> 
+
+                        <div class="col-md-4"> 
+
+                            <div class="card"> 
+
+                              <!-- Card adalah wadah konten yang fleksibel dan dapat diperluas. Ini termasuk opsi untuk header dan footer, berbagai macam konten, warna latar kontekstual, dan opsi tampilan yang kuat. Jika Anda akrab dengan Bootstrap 3, kartu menggantikan panel, sumur, dan gambar mini lama kami. Fungsi serupa untuk komponen-komponen tersebut tersedia sebagai kelas pengubah untuk kartu. --> 
+
+                              <!-- Card diguakan untuk memberikan efek tatanan seperti kartu --> 
+
+                              <!-- Kartu dibuat dengan markup dan gaya sesedikit mungkin, tetapi tetap dapat memberikan satu ton kontrol dan penyesuaian. Dibangun dengan flexbox, mereka menawarkan penyelarasan mudah dan aduk dengan komponen Bootstrap lainnya. Mereka tidak memiliki margin secara default, jadi gunakan utilitas jarak sesuai kebutuhan. 
+
+  
+
+                              Di bawah ini adalah contoh kartu dasar dengan konten campuran dan lebar tetap. Kartu tidak memiliki lebar tetap untuk memulai, jadi   mereka akan secara alami mengisi lebar penuh elemen induknya. Ini mudah disesuaikan dengan berbagai opsi ukuran kami. --> 
+
+  
+
+                              <!-- Dokumentasi untuk Card : https://getbootstrap.com/docs/4.0/components/card/ --> 
+
+                                <img class="card-img-top" src="https://images.unsplash.com/photo-1532348854900-2b544bcf012f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3f7b2d9f4ddc67acf61449020bc47455&auto=format&fit=crop&w=334&q=80" alt="Card image cap"> 
+
+                                <div class="card-body"> 
+
+                                    <h5 class="card-title">Card title</h5> 
+
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> 
+
+                                    <a href="#" class="btn btn-primary">Go somewhere</a> 
+
+                                </div> 
+
+                            </div> 
+
+                        </div> 
+
+  
+
+                        <div class="col-md-4"> 
+
+                            <div class="card"> 
+
+                                <img class="card-img-top" src="https://images.unsplash.com/photo-1532302693556-4e52818e4922?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a9d81642de2103f85e1e6d3ac403960e&auto=format&fit=crop&w=750&q=80" alt="Card image cap"> 
+
+                                <div class="card-body"> 
+
+                                    <h5 class="card-title">Card title</h5> 
+
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> 
+
+                                    <a href="#" class="btn btn-primary">Go somewhere</a> 
+
+                                </div> 
+
+                            </div> 
+
+                        </div> 
+
+                         
+
+                        <div class="col-md-4"> 
+
+                            <div class="card"> 
+
+                                <img class="card-img-top" src="https://images.unsplash.com/photo-1532321398520-a8c4cb5e20b2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e280d2d563ec1a47b8dab40ebe1ac387&auto=format&fit=crop&w=334&q=80" alt="Card image cap"> 
+
+                                <div class="card-body"> 
+
+                                    <h5 class="card-title">Card title</h5> 
+
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> 
+
+                                    <a href="#" class="btn btn-primary">Go somewhere</a> 
+
+                                </div> 
+
+                            </div> 
+
+                        </div>     
+
+                    </div> 
+
+                </div> 
+
+  
+
+                <footer class="container"> 
+
+                    <div class="row py-5"> 
+
+                        <!-- py = PADDING SUMBU Y, memberikan Padding pada bagian atas dan bawah kontent --> 
+
+                      <!-- px = PADDING SUMBU X, memberikan Padding pada bagian kiri dan kanan kontent --> 
+
+  
+
+                      <!-- my = MARGIN SUMBU Y, memberikan Margin pada bagian atas dan bawah kontent --> 
+
+                      <!-- mx = MARGIN SUMBU x, memberikan Margin pada bagian kiri dan kanan kontent --> 
+
+  
+
+                        <div class="col"> 
+
+                            <form> 
+
+  <div class="form-group"> 
+
+    <label for="exampleInputEmail1">Email address</label> 
+
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"> 
+
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> 
+
+  </div> 
+
+  <div class="form-group"> 
+
+    <label for="exampleInputPassword1">Password</label> 
+
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"> 
+
+  </div> 
+
+  <div class="form-check"> 
+
+    <input type="checkbox" class="form-check-input" id="exampleCheck1"> 
+
+    <label class="form-check-label" for="exampleCheck1">Check me out</label> 
+
+  </div> 
+
+  <button type="submit" class="btn btn-primary">Submit</button> 
+
+</form> 
+
+                            <p style="background-color: black; color: white;"> 
+
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum possimus laborum pariatur odit ipsum, soluta laudantium cupiditate quo excepturi odio veniam facilis iste debitis cum ducimus natus quae quas facere. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae officiis nihil vel doloribus alias veritatis, labore eius omnis laborum dolorem ex totam nam, accusantium soluta aspernatur veniam nisi consequatur voluptatem. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi, incidunt omnis. Id ad cum vel animi, nisi voluptatibus! A repellendus quod, doloribus est alias ullam facere ab obcaecati distinctio velit. 
+
+                            </p> 
+
+                        </div> 
+
+                    </div> 
+
+                </footer> 
+
+                 
+
+    <!-- Optional JavaScript --> 
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS --> 
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script> 
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script> 
+
+  </body> 
+
+  
+
+</html> 

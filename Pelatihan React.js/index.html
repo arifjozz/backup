@@ -1,0 +1,274 @@
+<DOCTYPE html>
+<html>
+<head>
+    <style>
+        #title {
+            color: white;
+            background-color: rgb(26, 97, 97);
+            font-size: 45px;
+            text-align: center;
+        }
+    #number {
+        background: black;
+        color: white;
+        font-size: 40px;
+    }
+    #string {
+        background: black;
+        color: white;
+        font-size: 40px;
+    }
+
+      #logika {
+        background: black;
+        color: white;
+        font-size: 40px;
+    }
+
+    #footer {
+        color: black;
+        text-align: center;
+    }
+
+    </style>
+</head>
+<body>
+    <div id="title"></div><br />
+<label>Output Javascript Variable Tipe Data Number</label>
+ <div id="number"></div>
+ <label>Output Javascript Variable Tipe Data String</label>
+ <div id="string"></div>
+ <label>Output Javascript Logika</label>
+ <div id="logika"></div>
+ <div id="footer"></div>
+
+ <script>
+
+//Tipe data string
+    var word1 = "Latihan javascript";
+    var word2 = " untuk pemula";
+    var title = word1 + word2;
+    var title_sort
+    var author = "Anggih Nur Hidayat";
+
+//tipe data angka/number
+    var angka = 1000;
+    var angka1 = 500;
+    // var angka2 = 100.123;
+    // var angka3 = 50.499;
+    // var angka4 = 10.123456789;
+    // var angka6 = 10;
+    // var tambah = angka2 + angka3;
+    // var kurang =  angka - angka1;
+    // var bagi = angka / angka1;
+    // var kali = angka * angka1;
+    // angka-- //decrement atau mengurangi satu
+    // angka1++ //increment atau menambah satu
+    // angka = angka + angka1;
+    //Penulisan Singkat
+    angka += angka1;
+    document .getElementById('number').innerHTML = angka;
+    //Metode angka/number
+    /*
+       1. toFixed() --> Untuk membatasi angka dibelakang titik pada bilangan desimal
+       2. toString() --> Untuk mengubah tipe data number/angka menjadi tipe data string/teks
+       3. random() --> Untuk menghasilkan sebuah angka secara acak
+       4. min(a,b,c) --> Untuk menentukan angka mana yang terkecil di antara tiga itu (a,b,c)
+       5. max(a,b,c) -->Untuk menentukan angka mana yang terbesar di antara tiga itu (a,b,c)
+       6. round() --> Untuk membulatkan sesuai aturan matematika, jika <=5 maka tambah satu, tapi jika >=5 maka bilangan dibelakang koma hilang.
+       7. floor() --> Membulatkan bilangan atau menghilangkan angka dibelakang koma, berapapun nilainya.
+       8. ceil() --> Membulatkan bilangan atau menambah satu, berapapun angka dibelakang koma
+       9. rumus random untuk spesifikasi angka --> Math.floor (Math.random() * x) + 1;
+                x berarti range atau jarak /
+                angka 1, menjadi batas minimal hasil angka randomnya
+                x + 1 berarti batas maksimal angka random yang dihasilkan
+   */
+
+    var tofixed = angka4.toFixed(3);
+    var tostring = angka1.toString() + angka2;
+    var random = Math.random().toFixed(3);
+    var min = Math.min(angka, angka1, angka2);
+    var max = Math.max(angka3,angka4,angka2);
+    var bulat = Math.round(angka3);
+    var lantai = Math.floor(angka4);
+    var atas = Math.ceil(angka4);
+    var rumus = Math.floor(Math.random() * angka6) + 5;
+
+/*----Metode String
+    1. length -> Untuk menghitung banyaknya huruf pada nilai sebuah variable string.
+    2. indexOf -> Untuk mencari posisi huruf pada nilai sebuah variabel, output berupa angka.
+    3. lastIndexof -> Untuk mencari posisi huruf pada nilai sebuah variabel dan mengambil data yang terakhir.
+    4. search -> Untuk mencari posisi huruf atau kata secara spesifik.
+    5. charArt -> Untuk mencari sebuah huruf atau kata dengan inputan angka.
+    6. toUppercase() -> Untuk mengubah huruf menjadi KAPITAL.
+    7. toLowercase() -> untuk mengubah huruf menjadi kecil.
+    8. replace("","") -> mengganti sebuah hrufu atau kata dengan huruf atau kata yang lain.
+    9. substring(start, end) -> Untuk mengambil sebuah huruf atau kata.
+    10. substr (start, length) -> Untuk mengambil berapa pangjang sebuah huruf atau kata.
+    11. parseInt() -> Untuk mengubah sebuah tipe data lain menjadi integer (tidak punya angka di belakang koma.
+    12. parseFloat() -> Untuk mengubah sebuah tipe data lain menjadi tipe data yang  punya angka di belakang koma.
+*/
+
+var nama = "Anggih Nur Hidayat";
+var string = "1000.153";
+var leng = nama.length;
+var indeks = nama.indexOf("aya");
+var lasindeks = nama.lastIndexOf("id");
+var serc = nama.search("N");
+var car = nama.charAt(5);
+var kapital = nama.toUpperCase();
+var kecil = nama.toLowerCase();
+var ganti = nama.replace("Nur","Cahaya");
+var sub = nama.substring(0,5);
+var str = nama.substr(0,6);
+var parse = parseInt(string) + 50;
+var flot = parseFloat(string) +100;
+
+
+
+    //Fungsi pada JavaScript
+    //Format penulisan function
+    /*
+    // function namaFungsi(){kode yang akan dijalankan;
+    }
+
+    //Panggil function
+    namaFungsi();
+    */
+
+    document.getElementById("title").innerHTML = title;
+
+  //  document.getElementById("string").innerHTML = flot;
+    document.getElementById("footer").innerHTML = author;
+
+   function printNum(){ // format
+  //  alert("Welcome!!!"); //untuk memunculkan jendela/pop up bertuliskan Welcome!!!
+    document.getElementById("number").innerHTML = angka;
+
+    }
+    printNum(); //fungsi printText diatas dipanggil
+
+
+    //parameter
+      /*
+    function namaFungsi(namaparameter){
+        kode yang akan dijalankan;
+    }
+
+    //Panggil function
+    namaFungsi(nilai parameternya);
+    */
+
+   // function printText(nama, nama2) { //parameternya selalu mengacu ke printText(nama) dibawah
+
+    //    var text = nama + nama2 + " anak baik";
+    //    document.getElementById("#").innerHTML = text;
+  //  }
+
+   /// var nama = "Anggih Nur Hidayat";
+   // printText(nama, ", rajin"); // parameter ini mengacu pada variabel diatasnya ^^
+
+function mengembalikan() {
+    return "Hanya mengembalikan saja, bukan ngeprint";
+
+}
+var ret =  mengembalikan();
+//document.getElementById("string").innerHTML = ret;
+
+
+//Array = tipe data yang bisa menampung lebih dari satu nilai (bisa berbeda nilai)
+var aray = ["anggih", "asep","apin"];
+aray [0] = "Anggih Nur";
+//document.getElementById("string").innerHTML = aray[0];
+
+//Metode array
+/*
+1. sort -> Untuk mengurutkan nilai array berdasar abjad
+2. reverse -> untuk membalikan urutan nilai array
+3. length -> untuk menghitung jumlah array
+4. join -> untuk menentukan pemisah antar nilai array
+5. concat -> untuk menggabungkan antar array
+6. splice(start, dihapus?, isi), splice -> remove
+7. pop -> untuk menghapus bagian terakhir dari nilai array
+8. push -> untuk menambah nilai array di bagian terakhir
+9. shift -> untuk menghapus nilai array dibagian pertama
+10. unshift -> untuk menambah nilai array dibagian pertama
+*/
+
+// MUlti dimensi array
+// syntax :
+// [["Anggih", 15],["ci",18]]
+var nama1 = ["aya","liyi","kuyu"];
+var nama2 = ["saku","fika","iki"];
+var nama3 = ["kiti","kita","kate"];
+nama1.push("ana")
+nama1.splice(1,0,"gege");
+var text = nama1.concat(nama2, nama3);
+//document.getElementById("string").innerHTML = nama1.sort();
+//document.getElementById("string").innerHTML = nama1.reverse();
+document.getElementById("string").innerHTML = nama1;
+//document.getElementById("string").innerHTML = text.join(" = ");
+
+//Format penulisan if dan else
+// if (syarat) {
+//     //kondisi yang akan dijalankan jika terpenuhi
+// } else {
+//     //kondisi yang akan dijalankan jika tidak terpenuhi
+// }
+//Dua syarat
+//  dan && ->> Dua-duanya harus memenuhi
+// atau || ->> Hanya salah satu yg harus memenuhi
+
+var orang1 = 300000;
+var orang2 = 20000;
+var emas   = 20000;
+
+var uang = 1000;
+var barang = 15000;
+
+
+//Satu Syarat
+// if(uang > barang) {
+// document.getElementById("logika").innerHTML = "Transaksi Berhasil"
+// } else {
+//     //alert("Transaksi gagal")
+// document.getElementById("logika").innerHTML = "Transaksi Gagal"
+// }
+
+//Dua Syarat
+// if (orang1 == emas && orang2 == emas)  {
+//     document.getElementById("logika").innerHTML = "Transaksi Berhasil"
+
+// } else if(orang1 > emas ){
+//     document.getElementById("logika").innerHTML = "Transaksi Berhasil"
+// }
+
+// else {
+//     document.getElementById("logika").innerHTML = "Transaksi Gagal"
+// }
+
+//SWITCH CASE
+//Menangani kasus percabangan yang syaratnya sudah pasti atau konstanta.
+// var jurusan = "TP";
+//
+// switch (jurusan) {
+//     case "MM":
+//         alert('Ini adalah jurusan MM');
+//         break;
+//     case "TP":``
+//         alert('Ini adalah jurusan TP');
+//         break;
+//     case "TKR":
+//         alert('ini Adalah Jurusan TKR');
+//         break;
+//     case "TKJ":
+//         alert('ini Adalah Jurusan TKJ');
+//         break;
+//     default:
+//     document.getElementById("logika").innerHTML = "Bukan Jurusan yang Tepat"
+//         break;
+// }
+
+ </script>
+</body>
+</html>

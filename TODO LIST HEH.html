@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edege"> 
+    <!--Agar kita kompatible di Internet Explorer/Edge!--> 
+    <meta name="viewport" content="width=device-width",initial-scale=1.0"/> 
+
+	<title>Todo</title>
+</head>
+<body>
+	<h1 id="judul">Daftar Baju</h1>
+	<input id="input" />
+	<button id="simpan">Simpan</button>
+
+	<br/>
+	<br/>
+	<ul id="menu">
+	
+	</ul>
+	<script>
+		const juduDOM = document.getElementById('judul')
+		juduDOM.innerHTML = "JUDUL LAIN"
+		
+		const inputDOM = document.getElementById('input')
+		
+		const simpanDOM = document.getElementById('simpan')
+		
+		const menuDOM = document.getElementById('menu')
+		
+
+		
+		simpanDOM.addEventListener('click',function(){
+		const data = inputDOM.value
+		menuDOM.innerHTML = menuDOM.innerHTML + "<li>" + data + "</li>"
+		inputDOM.value = "";
+		localStorage.setItem('Key', JSON.stringify(menuData))
+		})
+
+		function Tampil(){
+			let listEJTIEMEL = ""
+			for (var i=0; i<data.length;i++)
+				listEJTIEMEL = listEJTIEMEL + `<li>` 
+		}
+		// let Data = []
+
+		// localData = JSON.parse(localStorage.getItem("Daftar"))
+		// if(localData != null) {
+		// 	Data = localData
+		// }
+		// render()
+
+		// function Tambah(){
+		// 	alert('hai');
+			// const inputBaru = inputDOM.value
+			// Data.push(inputBaru)
+
+			// inputDOM.value = ""
+			// localStorage.setItem("Daftar", JSON.stringify(Data))
+		
+
+	</script>
+</body>
+</html>

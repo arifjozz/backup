@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edege"> 
+    <!--Agar kita kompatible di Internet Explorer/Edge!--> 
+    <meta name="viewport" content="width=device-width",initial-scale=1.0"/> 
+
+	<title>Todo</title>
+</head>
+<body>
+	<h1 id="judul">Daftar Baju</h1>
+	<input type="text" id="input" />
+	<button id="btn">Simpan</button>
+	<br/>
+	<br/>
+	<ul id="menu">
+		<li>a</li>
+		<li>b</li>
+		<li>c</li>
+	</ul>
+	<script>
+		const juduDOM = document.getElementById('judul')
+		juduDOM.innerHTML = "JUDUL LAIN"
+		// Variabel apapun kalau ditaruh diawal harus ditulis dengan const atau konstanta
+		//TUGAS
+		//1.Buatlah variabel dom yang mengarah ke input
+		const inputDOM = document.getElementById('input')
+		//2.Buatlah variabel dom yang mengarah ke button
+		const btnDOM = document.getElementById('btn')
+		//3.Buatlah variabel dom yang mengarah ke ul
+		const menuDOM = document.getElementById('menu')
+		
+		// 1.Jika diklik
+		btnDOM.addEventListener('click', function(){
+		// 2.ngeGET data yang diinput
+		// 3.Menyimpan data yang diGet ke var data
+		// No.3 ini bisa const data = document.getElementById('anu').value
+		const data = inputDOM.value
+		// 4.Menambahkan data yang disimpan ke list
+		menuDOM.innerHTML = menuDOM.innerHTML + "<li>" + data + "</li>"
+		// 5.Input valuenya harus kosong
+		inputDOM.value = ""
+		})
+
+		function simpan() {
+			var storage = document.getElementById('input').value
+			localStorage.setItem('Text',storage);
+		}
+		function tampil(){
+			var tampilTeks = localStorage.getItem('Text');
+			if (tampilTeks) {
+				x = document.getElementById('tampil');
+				x.innerHTML=tampilTeks;
+			}
+		}
+	
+
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+.Jumbotron{
+;
+    background: url(http://i66.tinypic.com/28am9fs.jpg);
+    background-color: rgba(0, 0, 0, 0);
+    background-size: auto auto;
+    color: #fff;
+    background-size: cover;
+    }
+
+    .card:hover
+    {
+      cursor: pointer;
+      box-shadow: 0 10px 60px rgba(0,0,0,0.3), 0 6px 15px rgba(0,0,0,0.3);
+      box-sizing: border-box;
+    }
+
+    .kaki
+    {
+       border-top: 1px solid rgb(231, 231, 231); 
+       text-align: center;
+       padding: 20px; 
+       left: 0px; 
+       bottom: 0px; 
+       height: 60px; 
+       width: 100%; 
+       color: rgb(108, 117, 125);"
+    }

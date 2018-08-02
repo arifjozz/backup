@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Pengulangan</title>
+<style media="screen">
+h1 {
+  background: green;
+  color: white;
+  text-align: center;
+}
+#looping {
+  background: orange;
+  color: white;
+}
+</style>
+  </head>
+
+  <body>
+<h1>Belajar Pengulangan</h1>
+<p>Output Pengulangan</p>
+    <div id="looping"></div>
+    <script>
+
+// FOr LOOP
+  // for (i = 0; i < 5; i++) {
+  //   document.getElementsByClassName('looping').innerHTML = i;
+  //   alert(i);
+  //
+  // }
+
+//WHILE LOOP
+
+var i = 6;
+var text = "";
+// while( i<=5 ){
+//     text += "<br>Angka " + i++;
+// }
+
+//DO WHILE -> Mengerjaknban minimal satu kondisi, setelah itu mengerjakan syaratnya
+
+do{
+    text += "<br>Angka " + i++;
+}
+while( i<=5 )
+document.getElementById("looping").innerHTML = i;
+    </script>
+  </body>
+</html>
